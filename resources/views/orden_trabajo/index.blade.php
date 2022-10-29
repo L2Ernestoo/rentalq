@@ -46,7 +46,7 @@
                                 class="btn btn-sm btn-warning text-white">PENDIENTE PAGO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 5)
-                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">
+                        <button v-on:click="retornarVehiculo({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">
                             Pendiente Retorno
                         </button>
                     @else
@@ -82,6 +82,32 @@
                             <option value="0" hidden>Seleccione un estado</option>
                             <option value="2">EN ESPERA</option>
                             <option value="3">PENDIENTE PAGO</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" v-on:click="guardarOrden" id="btnCambiarEstado" class="btn btn-primary">
+                        Guardar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRetornado" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Retorno Vehiculo # @{{ ordenTrabajo }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <select v-model="estado" class="custom-select">
+                            <option value="6" selected>VEHICULO RETORNADO</option>
                         </select>
                     </p>
                 </div>
@@ -146,7 +172,10 @@
                     this.ordenTrabajo = id
                     $('#modalCreada').modal('show')
                 },
-
+                retornarVehiculo: function (id) {
+                    this.ordenTrabajo = id
+                    $('#modalRetornado').modal('show')
+                },
                 guardarOrden: function () {
                     document.getElementById("btnCambiarEstado").disabled = true;
                     axios
