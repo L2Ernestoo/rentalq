@@ -218,7 +218,11 @@
 
     <!-- Main content -->
     <section class="content">
-      <div id="app" class="container p-4 bg-white shadow-sm rounded">
+        @if(Route::is('orden_trabajo.index'))
+      <div id="app" class="container-fluid p-4 bg-white shadow-sm rounded">
+          @else
+              <div id="app" class="container p-4 bg-white shadow-sm rounded">
+          @endif
           @yield('contenido')
       </div><!-- /.container-fluid -->
     </section>
