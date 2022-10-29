@@ -85,7 +85,7 @@
 <table class="table table-bordered">
     <tbody>
     <tr>
-        <th colspan="6" class="text-center" style=" background: #B695C0; ">DATOS DEL VEHICULO</th>
+        <th colspan="6" class="text-center" style=" background: #DCD0FF; ">DATOS DEL VEHICULO</th>
     </tr>
     <tr>
         <td class="text-center" scope="row"><b>PLACA:</b> <br> {{$orden->placa}}</td>
@@ -100,7 +100,7 @@
 <table class="table table-bordered">
     <tbody>
     <tr>
-        <th colspan="5" class="text-center" style=" background: #B695C0; ">DATOS DEL CLIENTE</th>
+        <th colspan="5" class="text-center" style=" background: #DCD0FF; ">DATOS DEL CLIENTE</th>
     </tr>
     <tr>
         <td class="text-center"><b>NOMBRE:</b> <br> {{$orden->nombre}}</td>
@@ -114,7 +114,7 @@
 <table class="table table-bordered">
     <tbody>
     <tr>
-        <th colspan="3" class="text-center" style=" background: #B695C0; ">SERVICIOS SOLICITADOS</th>
+        <th colspan="3" class="text-center" style=" background: #DCD0FF; ">SERVICIOS SOLICITADOS</th>
     </tr>
     <tr>
         <th><b>SERVICIO:</b> </th>
