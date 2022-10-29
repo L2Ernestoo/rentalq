@@ -29,7 +29,7 @@
             <th scope="col">Dirección</th>
             <th scope="col">Correo Electrónico</th>
             <th scope="col">Acciones</th>
-            <th scope="col" class="text-center">Historial de Servicios</th>
+            <th scope="col" class="text-center">Servicios Alquiler</th>
 
         </tr>
         </thead>

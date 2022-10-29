@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('contenido')
-    <h1 class="text-center"> HISTORIAL DE SERVICIOS POR CLIENTE</h1>
+    <h1 class="text-center">HISTORIAL DE SERVICIOS DE ALQUILER POR CLIENTE</h1>
     <br>
     {{--    <a class="btn btn-primary"  style=background-color:forestgreen href="{{route('vehiculos.created')}}">--}}
     {{--        <i class="fas fa-plus-circle"></i>--}}
@@ -16,7 +16,7 @@
             <th scope="col">Placa</th>
             <th scope="col">Servicio</th>
             <th scope="col">Precio</th>
-            <TH scope="col" class="text-center">Orden de Trabajo</TH>
+            <TH scope="col" class="text-center">FICHA DE ALQUILER</TH>
 
         </tr>
         </thead>

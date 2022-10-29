@@ -1,7 +1,7 @@
 <html lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>ALQUILERQ - SQA - {{$orden->id}}</title>
+    <title>RENTALQ - SQA - {{$orden->id}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style>
@@ -65,9 +65,9 @@
     <div class="col-xs-4">
         <p>
             <h4>FICHA ALQUILER</h4>
-            23 y 24 Calle, Ruta Principal <br>
+            Ruta Principal <br>
             Puerto Barrios, Izabal, Guatemala <br>
-            Tel.: 7942-9747 - Fax: 7942-9746
+            Tel.: 1234-5678 - Fax: 5267-5638
         </p>
     </div>
     <div class="col-xs-4">
@@ -143,7 +143,7 @@
         <div class="col-xs-5" style="line-height: 15px">
             f/<br>
             ______________________________________ <br>
-            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; FIRMA DEL MECÁNICO
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; FIRMA DE ENCARGADO
         </div>
         <div class="col-xs-6" style="line-height: 15px">
             f/<br>
@@ -156,12 +156,11 @@
             <p>
                 <b>CONDICIONES ACEPTADAS POR EL CLIENTE: </b>
                 <br>
-                <b>1.</b> Autorizo para que mi vehículo sea probado fuera de las instalaciones.
+                <b>1.</b> Confirma que el vehículo es responsabilidad del cliente en cuanto a su integridad.
                 <br>
-                <b>2.</b> Ningún vehículo será entregado sin antes cancelar.
+                <b>2.</b> Ningún vehículo será aceptado en malas condiciones.
                 <br>
-                <b>3.</b> La empresa no se hace responsable por daños al vehículo debido a causas naturales o de fuerza mayor,
-                ni por objetos olvidados dentro del mismo.
+                <b>3.</b> Todo daño ocasionado se tendra que contatar a la aseguranza que se tuvo que contratar.
             </p>
         </div>
     </div>
