@@ -35,15 +35,15 @@
                 <td>Q {{number_format($OrdenTrabajo->total,2)}}</td>
                 <td  class="text-center">@if($OrdenTrabajo->estatus == 1)
                         <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-primary">
-                            CREADA
+                            CONTRATO GENERADO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 2)
                         <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm text-white" style="background:#E78C10">EN
-                            PROCESO
+                            VEHICULO ENTREGADO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 3)
                         <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">EN
-                            ESPERA
+                            FINALIZADO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 4)
                         <button v-on:click="pagarBoleta({{$OrdenTrabajo->id}}, {{$OrdenTrabajo->total}})"
@@ -113,8 +113,10 @@
                         <option value="0" hidden>FORMA DE PAGO</option>
                         <option value="1">EFECTIVO</option>
                         <option value="2">CHEQUE</option>
-                        <option value="3">TARJETA DE CRÉDITO</option>
+                        <option value="3">TARJETA DE CRÉDITO/DEBITO</option>
                         <option value="4">DEPOSITO</option>
+                        <option value="4">PAYPAL</option>
+                        <option value="4">BITCOIN</option>
                     </select>
                     </p>
                 </div>
