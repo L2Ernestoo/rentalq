@@ -45,6 +45,6 @@ class LineasController extends Controller
     public function updated(Request $request, $id){
         $linea=Linea::find($id);
         $linea->fill($request->all())->save();
-        return redirect()->route("linea.index");
+        return redirect()->route("lineas");
     }
 }
