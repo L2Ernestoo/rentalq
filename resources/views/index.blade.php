@@ -11,7 +11,7 @@
     <h1 class="text-center">ALQUILERQ - SQA</h1>
 </div>
 <div class="d-flex mt-4 justify-content-center">
-    <img  src="dist/img/LogoAgencia.jpg" style="opacity: .7; width: 300px; height: 150px;">
+    <img  src="logo.png" style="opacity: .7; width: 300px; height: 150px;">
     <br>
     <br>
 </div>
