@@ -140,7 +140,7 @@
     </tr>
     </tbody>
 </table>
-<div style="margin-top: 150px">
+<div style="margin-top: 120px">
     <div class="row" style="margin-bottom: 25px!important;">
         <div class="col-xs-5" style="line-height: 15px">
             f/<br>
@@ -168,7 +168,7 @@
     </div>
 </div>
 <div class="page_break"></div>
-<img src="https://rentalq.autos/contrato.jpeg" style="height: 80px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
+<img src="https://rentalq.autos/contrato.jpeg" style="height: 800px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
 
 </body>
 </html>
