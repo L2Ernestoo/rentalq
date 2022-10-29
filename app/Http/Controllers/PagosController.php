@@ -6,6 +6,7 @@ use App\Models\Helper;
 use App\Models\OrdenTrabajo;
 use App\Models\Pago;
 use App\Models\TipoPago;
+use App\Models\Vehiculo;
 use Illuminate\Http\Request;
 
 class PagosController extends Controller
@@ -42,6 +43,10 @@ class PagosController extends Controller
         $orden = OrdenTrabajo::find($request->id);
         $orden->estatus = Helper::$PAGADA;
         $orden->save();
+
+        $vehiculo = Vehiculo::find($orden->vehiculos_id);
+        $vehiculo->estado = "Alquilado";
+        $vehiculo->save();
 
         return redirect()->route('pagos.index');//name de la ruta
     }

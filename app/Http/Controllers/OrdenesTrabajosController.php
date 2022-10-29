@@ -64,6 +64,12 @@ class OrdenesTrabajosController extends Controller
         $orden = OrdenTrabajo::find($request->id);
         $orden->estatus = $request->estado;
         $orden->save();
+
+        if($request->estado == 6){
+            $vehiculo = Vehiculo::find($orden->vehiculos_id);
+            $vehiculo->estado = "Disponible";
+            $vehiculo->save();
+        }
     }
 
     public function store(Request $request)
