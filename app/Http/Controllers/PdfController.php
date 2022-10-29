@@ -43,7 +43,7 @@ class PdfController extends Controller
         $vista = view('pdf.orden', compact('orden','detalle'));
         return PDF::loadHTML($vista)
             ->setPaper('letter')
-            ->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])
+            ->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true, 'defaultFont' => 'sans-serif'])
             ->stream('ALQUILERQ - SQA - '.$orden->id.'.pdf');
     }
 
