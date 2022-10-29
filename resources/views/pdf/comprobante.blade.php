@@ -1,7 +1,7 @@
 <html lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>ALQUILERQ - SQA - {{$pago->id}}</title>
+    <title>RENTAQL - SQA - {{$pago->id}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style>
@@ -60,14 +60,14 @@
 <body>
 <div class="row">
     <div class="col-xs-2">
-        <img src="https://pg.syscastillo.com/dist/img/LogoAgencia.jpg" style="height: 80px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
+        <img src="https://i.imgur.com/nuv6URk.png" style="height: 80px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
     </div>
     <div class="col-xs-4 text-center">
         <p >
         <h3 class="text-center">RECIBO</h3>
-        23 y 24 Calle, Ruta Principal <br>
+        Ruta Principal <br>
         Puerto Barrios, Izabal, Guatemala <br>
-        Tel.: 7942-9747 - Fax: 7942-9746
+        Tel.: 1234-5678 - Fax: 5267-5638
         </p>
     </div>
     <div class="col-xs-4">

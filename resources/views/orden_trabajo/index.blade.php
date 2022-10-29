@@ -39,15 +39,15 @@
                         </button>
                     @elseif($OrdenTrabajo->estatus == 2)
                         <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm text-white" style="background:#E78C10">EN
-                            VEHICULO ENTREGADO
+                            EN ESPERA
                         </button>
                     @elseif($OrdenTrabajo->estatus == 3)
-                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">EN
-                            FINALIZADO
-                        </button>
-                    @elseif($OrdenTrabajo->estatus == 4)
                         <button v-on:click="pagarBoleta({{$OrdenTrabajo->id}}, {{$OrdenTrabajo->total}})"
                                 class="btn btn-sm btn-warning text-white">PENDIENTE PAGO
+                        </button>
+                    @elseif($OrdenTrabajo->estatus == 5)
+                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">EN
+                            FINALIZADO
                         </button>
                     @else
                         <button class="btn btn-sm btn-secondary">PAGADA</button>
@@ -80,9 +80,8 @@
                     <p>
                         <select v-model="estado" class="custom-select">
                             <option value="0" hidden>Seleccione un estado</option>
-                            <option value="2">EN PROCESO</option>
-                            <option value="3">EN ESPERA</option>
-                            <option value="4">PENDIENTE PAGO</option>
+                            <option value="2">EN ESPERA</option>
+                            <option value="3">PENDIENTE PAGO</option>
                         </select>
                     </p>
                 </div>
