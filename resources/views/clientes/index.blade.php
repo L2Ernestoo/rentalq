@@ -42,15 +42,17 @@
                 <td>{{$cliente->telefono}}</td>
                 <td>{{$cliente->direccion}}</td>
                 <td>{{$cliente->correo}}</td>
-                <td  class="text-center">
+                <td  nowrap class="text-center">
 {{--               <td> <form action="{{route('delete', $cliente->id)}}" method="post">--}}
 {{--                    @csrf @method('DELETE')--}}
 {{--                    <button title="ELIMINAR REGISTRO" type="submit" onclick="return confirm('¿Seguro de borrar datos?');" class="btn btn-danger btn-sm">--}}
 {{--                        <i class="fas fa-trash-alt"></i>--}}
 {{--                    </button>--}}
-                       <a title="EDITAR DATOS" class="btn btn-primary btn-sm" href="{{route("clientes.edit", $cliente->id)}}"><i class="fas fa-edit"></i>
-                       </a>
-                </form>
+                    <a title="EDITAR DATOS" class="btn btn-primary btn-sm" href="{{route("clientes.edit", $cliente->id)}}"><i class="fas fa-edit"></i></a>
+                    @if(!empty($cliente->dpi))
+                        <a title="VER DPI" class="btn btn-info btn-sm" target="_blank" href="{{asset('storage'.str_replace('public', '', $cliente->dpi))}}"><i class="far fa-address-card"></i>
+                        </a>
+                    @endif
 
                </td>
                 <td class="text-center"> <form>

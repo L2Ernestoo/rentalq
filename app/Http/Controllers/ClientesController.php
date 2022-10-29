@@ -54,8 +54,17 @@ class ClientesController extends Controller
     }
 
     public function updated(Request $request, $id){
+
         $cliente=Cliente::find($id);
-        $cliente->fill($request->all())->save();
+        $path = $request->dpi->store('public');
+
+        $cliente->nombre=$request->nombre;
+        $cliente->nit=$request->nit;
+        $cliente->telefono=$request->telefono;
+        $cliente->direccion=$request->direccion;
+        $cliente->correo=$request->correo;
+        $cliente->dpi=$path;
+        $cliente->save();
         return redirect()->route("clientes.index");
     }
 

@@ -8,7 +8,7 @@
         </div>
     @endif
 
-    <form autocomplete="off" action="{{route("clientes.updated", $cliente->id)}}" method="post">
+    <form autocomplete="off" action="{{route("clientes.updated", $cliente->id)}}" method="post" enctype="multipart/form-data">
 
         @csrf
         <div class="form-row">
@@ -31,6 +31,10 @@
             <div class="form-group col-md-6">
                 <label>Correo Electrónico:</label>
                 <input value="{{$cliente->correo}}" name="correo" type="email" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label>DPI:</label>
+                <input  name="dpi" type="file" class="form-control">
             </div>
         </div>
         <div  class=" d-flex mt-4 justify-content-center">

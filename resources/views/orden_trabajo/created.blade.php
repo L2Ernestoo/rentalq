@@ -10,7 +10,7 @@
             <div class="form-group col-md-3">
                 <div>
                     <label>Vehiculos Disponibles:</label>
-                    <a title="NUEVA MARCA" href="{{route("marcas.created")}}">
+                    <a title="Nuevo Vehiculo" href="{{route("vehiculos.created")}}">
                         <i class="fas fa-plus-circle "></i>
                     </a>
                 </div>
@@ -43,7 +43,6 @@
                 <label>Nombre Completo:</label>
                 <input maxlength="60"  id="cliente" v-model="cliente.nombre" required name="nombre" type="text" class="form-control">
             </div>
-
             <div class="form-group col-md-3 col-sm-6">
                 <label>Dirección:</label>
                 <input maxlength="60" id="direccion" v-model="cliente.direccion" required name="direccion" type="text" class="form-control">
@@ -56,7 +55,6 @@
                 <label>Correo:</label>
                 <input maxlength="45"  id="correo" name="correo" v-model="cliente.correo" type="email" class="form-control">
             </div>
-
         </div>
         <br>
         <h2 class="text-center">SERVICIOS SOLICITADOS</h2>
