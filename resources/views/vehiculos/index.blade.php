@@ -28,6 +28,7 @@
             <th scope="col">Marca</th>
             <th scope="col">Tipo</th>
             <th scope="col">Estado</th>
+            <th scope="col">Historial de Servicios</th>
         </tr>
         </thead>
         <tbody>

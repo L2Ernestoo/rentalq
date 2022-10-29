@@ -140,8 +140,8 @@
                         <option value="2">CHEQUE</option>
                         <option value="3">TARJETA DE CRÉDITO/DEBITO</option>
                         <option value="4">DEPOSITO</option>
-                        <option value="4">PAYPAL</option>
-                        <option value="4">BITCOIN</option>
+                        <option value="5">PAYPAL</option>
+                        <option value="6">BITCOIN</option>
                     </select>
                     </p>
                 </div>

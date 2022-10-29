@@ -81,6 +81,10 @@
                 Tarjeta de Crédito
             @elseif($pago->tipo_de_pago==4)
                 Deposito
+            @elseif($pago->tipo_de_pago==5)
+                Paypal
+            @elseif($pago->tipo_de_pago==6)
+                Bitcoin
             @else
                 No asignado
             @endif
