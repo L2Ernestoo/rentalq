@@ -55,7 +55,7 @@ class OrdenesTrabajosController extends Controller
         $lineas = Linea::all();
         $tipo_vehiculo = TipoVehiculo::all();
         $servicios = Servicio::all();
-        $vehiculos = Vehiculo::with('marca','tipo_vehiculo', 'linea')->get();
+        $vehiculos = Vehiculo::with('marca','tipo_vehiculo', 'linea')->where('vehiculos.estado', 'Disponible')->get();
         return view('orden_trabajo.created', compact("marcas", "lineas", "tipo_vehiculo", "servicios", 'vehiculos'));
     }
 
