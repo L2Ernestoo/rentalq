@@ -169,6 +169,7 @@
 </div>
 <div class="page_break"></div>
 <img src="https://rentalq.autos/contrato.jpeg" style="height: 800px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
-
+<div class="page_break"></div>
+<img src="https://rentalq.autos/inspeccion.jpeg" style="height: 800px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
 </body>
 </html>
