@@ -46,7 +46,7 @@
                                 class="btn btn-sm btn-warning text-white">PENDIENTE PAGO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 5)
-                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">EN
+                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">
                             Pendiente Retorno
                         </button>
                     @else
