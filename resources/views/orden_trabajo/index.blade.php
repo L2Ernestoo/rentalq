@@ -38,7 +38,7 @@
                             CONTRATO GENERADO
                         </button>
                     @elseif($OrdenTrabajo->estatus == 2)
-                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm text-white" style="background:#E78C10">EN
+                        <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm text-white" style="background:#E78C10">
                             EN ESPERA
                         </button>
                     @elseif($OrdenTrabajo->estatus == 3)
@@ -47,10 +47,10 @@
                         </button>
                     @elseif($OrdenTrabajo->estatus == 5)
                         <button v-on:click="cambiarEstatus({{$OrdenTrabajo->id}})" class="btn btn-sm btn-danger">EN
-                            FINALIZADO
+                            Pendiente Retorno
                         </button>
                     @else
-                        <button class="btn btn-sm btn-secondary">PAGADA</button>
+                        <button class="btn btn-sm btn-secondary">Vehiculo Regresado</button>
                     @endif
                 </td>
                 <td class="text-center">
