@@ -39,7 +39,7 @@
             <th scope="col">Placa</th>
             <th scope="col">Servicio</th>
             <th scope="col">Precio</th>
-            <TH scope="col" class="text-center">Orden de Trabajo</TH>
+            <TH scope="col" class="text-center">Ficha Alquiler</TH>
 
         </tr>
         </thead>

@@ -277,7 +277,7 @@
                                 servicios: this.serviciosAgregados, cliente: this.cliente, vehiculo: this.vehiculo
                             })
                             .then(response => {
-                                toastr.success('Orden de trabajo registrada con exito.')
+                                toastr.success('Ficha registrada con exito.')
                                 setTimeout(function () {
                                     location.reload()
 

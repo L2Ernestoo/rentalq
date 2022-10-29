@@ -16,7 +16,7 @@
             <th scope="col">Fecha de pago</th>
             <th scope="col">Nit</th>
             <th scope="col">Cliente</th>
-            <th scope="col" class="text-center">Orden de Trabajo</th>
+            <th scope="col" class="text-center">Ficha Alquiler</th>
             <th scope="col">Total</th>
             <th scope="col" class="text-center">Forma de Pago</th>
             <th scope="col" class="text-center">Comprobante</th>

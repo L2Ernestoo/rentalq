@@ -23,7 +23,7 @@
                 <input name="cliente" type="text" class="form-control">
             </div>
             <div class="form-group col-md-4">
-                <label> No. Orden de Trabajo:</label>
+                <label> No. Ficha Alquiler:</label>
                 <input name="orden_trabajo" type="text" class="form-control">
             </div>
             <div class="form-group col-md-4">
