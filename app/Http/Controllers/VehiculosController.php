@@ -47,6 +47,7 @@ class VehiculosController extends Controller
         $vehiculo->color = strtoupper($request->color)  ;
         $vehiculo->marcas_id = $request->marca;
         $vehiculo->lineas_id = $request->linea;
+        $vehiculo->estado = "Disponible";
         $vehiculo->tipo_vehiculos_id = $request->tipovehiculo;
         $vehiculo->save();
         return redirect()->route('vehiculos.index');//name de la ruta

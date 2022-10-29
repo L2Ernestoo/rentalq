@@ -42,14 +42,7 @@
                 <td>{{$vehiculo->marca}}</td>
                 <td class="text-center">{{$vehiculo->descripcion}}</td>
                 <td class="text-center">{{$vehiculo->estado}}</td>
-                <td class="text-center"> <form>
-{{--                        @csrf @method('DELETE')
-                        <a href="{{route('orden.pdf', $vehiculo->no_orden)}}" target="_blank" class="btn btn-outline-info btn-sm ">
-                            <i class=" far fa-eye"> </i>
-                              VER</a> --}}
-                    </form>
 
-                </td>
                 <td class="text-center"> <form>
                         {{--                        @csrf @method('DELETE')--}}
                         <a href="{{route('reportes.vehiculos', $vehiculo->placa)}}" class="btn btn-outline-info btn-sm ">
