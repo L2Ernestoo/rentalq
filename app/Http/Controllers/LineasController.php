@@ -26,7 +26,7 @@ class LineasController extends Controller
 
     public function store(Request $request){
         $linea=new linea;//modelo
-        $linea->linea=$request->linea;
+        $linea->linea=strtoupper($request->linea);
         $linea->marcas_id=$request->marca;
         $linea->save();
         return redirect()->route('lineas.index');//name de la ruta
