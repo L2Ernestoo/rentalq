@@ -140,23 +140,6 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="{{route("reportes.periodo")}}" class="nav-link">
-                    <i class="nav-icon fas fa-calendar-alt"></i>
-                    <p>
-                        Servicios Según Período
-                    </p>
-                </a>
-            </li>
-          <li class="nav-item">
-            <a href="{{route("vehiculos.index")}}" class="nav-link">
-              <i class="nav-icon fas fa-car"></i>
-
-              <p>
-                Vehiculos Trabajados
-              </p>
-            </a>
-          </li>
 {{--            <li class="nav-item">--}}
 {{--                <a href="{{route("tipos_vehiculos.index")}}" class="nav-link">--}}
 {{--                    <i class="nav-icon fas fa-clipboard-list"></i>--}}
