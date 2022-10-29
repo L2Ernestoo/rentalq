@@ -56,6 +56,8 @@
         right: 0px;
         height: 175px;
     }
+    .page_break { page-break-before: always; }
+
 </style>
 <body>
 <div class="row">
@@ -138,7 +140,7 @@
     </tr>
     </tbody>
 </table>
-<footer>
+<div style="margin-top: 150px">
     <div class="row" style="margin-bottom: 25px!important;">
         <div class="col-xs-5" style="line-height: 15px">
             f/<br>
@@ -164,6 +166,9 @@
             </p>
         </div>
     </div>
-</footer>
+</div>
+<div class="page_break"></div>
+<img src="https://rentalq.autos/contrato.jpeg" style="height: 80px; width: 100%; margin-top: 5px; line-height: 5px;margin-bottom: 0;" />
+
 </body>
 </html>
