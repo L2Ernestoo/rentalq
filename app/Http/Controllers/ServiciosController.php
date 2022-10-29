@@ -21,7 +21,7 @@ class ServiciosController extends Controller
 
     public function all()
     {
-        return Servicio::all();
+        return Servicio::where('id','!=',5)->get();
     }
 
     public function created()
